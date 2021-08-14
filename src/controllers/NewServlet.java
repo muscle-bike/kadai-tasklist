@@ -39,8 +39,6 @@ public class NewServlet extends HttpServlet {
         Task m = new Task();
 
         // mの各フィールドにデータを代入
-        String title = "taro";
-        m.setTitle(title);
 
         String content = "hello";
         m.setContent(content);
