@@ -25,7 +25,7 @@ public class EditServlet extends HttpServlet {
      */
     public EditServlet() {
         super();
-        // TODO Auto-generated constructor stub
+
     }
 
     /**
@@ -43,8 +43,8 @@ public class EditServlet extends HttpServlet {
         request.setAttribute("task", m);
         request.setAttribute("_token", request.getSession().getId());
 
-        // メッセージデータが存在しているときのみ
-        // メッセージIDをセッションスコープに登録
+        // タスクデータが存在しているときのみ
+        // タスクIDをセッションスコープに登録
         if(m != null) {
             request.getSession().setAttribute("task_id", m.getId());
         }
